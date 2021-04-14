@@ -4,12 +4,12 @@
         <a href="/beer">Beers</a>
         <a href="/random-beer">Random Beer</a>
     </nav>
-    <h1>Beers</h1>
-
 </div>
 
-<div>
-{{#each beersFromApi}}
+<div class="mainClass">
+   {{#each beersFromApi}}
     {{> partial this}}
     {{/each}}
 </div>
+
+<footer>Designed by Silvi and Julie</footer>
