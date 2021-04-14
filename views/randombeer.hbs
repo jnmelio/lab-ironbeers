@@ -1,0 +1,15 @@
+<div>
+        <nav>
+        <a href="/">Home</a>
+        <a href="/beer">Beers</a>
+        <a href="/random-beer">Random Beer</a>
+    </nav>
+</div>
+
+<div>
+{{#each beersFromApi}}
+    {{> partial this}}
+   <p>Food pairing : {{this.food_pairing}}</p>
+   <p>Brewer tips : {{this.brewers_tips}}</p>
+    {{/each}}
+</div>
